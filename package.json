@@ -1,0 +1,16 @@
+{
+  "author": "Josh Goldberg <me@joshuakgoldberg.com>",
+  "description": "Example project using Swagger to generate a client SDK.",
+  "devDependencies": {
+    "onchange": "^7.1.0",
+    "typescript": "^4.1.3"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "typedoc-example",
+  "scripts": {
+    "docs": "typedoc --out docs --theme minimal src/index.ts",
+    "watch": "onchange README.md src/*.ts -- npm run docs"
+  },
+  "version": "1.0.0"
+}
